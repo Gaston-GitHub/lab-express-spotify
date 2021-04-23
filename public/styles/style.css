@@ -1,18 +1,107 @@
+body,
 html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+body {
   background-image: url("../images/spotify-background.jpeg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.formu {
-  position: absolute;
-  padding-top: 300px;
-  padding-left: 380px;
+/*input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}*/
+
+input[type="text"] {
+  padding: 5px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
-.form-tex-input {
-  width: 500px;
+input[type="text"]:focus {
+  border-color: #333;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background: rgb(182, 28, 28);
+  border: 0 none;
+  cursor: pointer;
+}
+
+input[value="Search for an Artist"] {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+tex-input {
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  text-align: center;
 }
 .btn {
-  margin-left: 200px;
+  margin: 10px;
   background: red;
+  color: white;
+  border: 0px;
+  padding: 10px 40px;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+form {
+  background-position: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+.container-element {
+  background-color: rgba(204, 150, 150, 0.562);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 460px;
+  min-height: 460px;
+  margin: 20px;
+}
+
+.container-collection {
+  max-width: 60vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+search-form {
+  margin: 20% auto;
+  width: 50vw;
+  height: 30vh;
+}
+
+.artist img {
+  width: 360px;
+  height: 360px;
 }
