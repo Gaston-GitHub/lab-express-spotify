@@ -17,27 +17,22 @@ body {
   justify-content: center;
 }
 
-/*input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}*/
-
 input[type="text"] {
-  padding: 5px;
+  padding: 10px 100px;
   border: 2px solid #ccc;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 2px;
   border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 220px;
 }
 
 input[type="text"]:focus {
-  border-color: #333;
+  border-color: black;
 }
 
 input[type="submit"] {
   padding: 5px 15px;
-  background: rgb(182, 28, 28);
+  background: rgb(218, 17, 17);
   border: 0 none;
   cursor: pointer;
 }
@@ -45,6 +40,8 @@ input[type="submit"] {
 input[value="Search for an Artist"] {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 340px;
+  margin-top: 0px;
 }
 
 tex-input {
@@ -57,7 +54,6 @@ tex-input {
   margin: 10px;
   background: red;
   color: white;
-  border: 0px;
   padding: 10px 40px;
   font-weight: 600;
   font-size: 1.3em;
@@ -67,23 +63,15 @@ h1 {
   font-size: 4em;
 }
 
-form {
-  background-position: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: antiquewhite;
-}
-
 .container-element {
-  background-color: rgba(204, 150, 150, 0.562);
+  background-color: rgba(227, 227, 227, 0.562);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-width: 460px;
-  min-height: 460px;
+  min-width: 400px;
+  min-height: 400px;
   margin: 20px;
 }
 
@@ -92,7 +80,8 @@ form {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: ;
 }
 
 search-form {
@@ -104,4 +93,14 @@ search-form {
 .artist img {
   width: 360px;
   height: 360px;
+}
+
+.form-container {
+  background-color: rgba(227, 227, 227, 0.562);
+  display: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 220px;
+  width: 800px;
+  height: 300px;
 }
